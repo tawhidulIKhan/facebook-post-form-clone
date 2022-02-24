@@ -1,0 +1,17 @@
+.f-emoji {
+    position: relative;
+    &-content {
+        display: flex;
+        background: #fff;
+        width: 300px;
+        height: 200px;
+        position: absolute;
+        bottom: 40px;
+        right: 0;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    &-toggler {
+        cursor: pointer;
+    }
+}
