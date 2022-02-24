@@ -1,0 +1,129 @@
+.f-form {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-modal {
+        &-content {
+            background-color: #fff;
+            width: 500px;
+            height: 500px;
+            border-radius: 10px;
+            overflow: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        &-header {
+            text-align: center;
+            position: relative;
+        }
+        &-body {
+            flex: 1;
+            overflow: auto;
+            height: 200px;
+        }
+        &-footer {
+            height: 100px;
+            padding: 20px;
+            &-extra {
+                display: flex;
+                align-items: center;
+                height: 50px;
+                border: 1px solid #eee;
+                padding: 0 10px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+            }
+        }
+        &-close {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &-btn-post {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 0;
+            border: none;
+            background: #6b76ff;
+            border-radius: 5px;
+            color: #fff;
+            font-weight: 600;
+        }
+    }
+    &-intro {
+        display: flex;
+        padding: 0 20px;
+        padding-top: 20px;
+        gap: 20px;
+        align-items: center;
+        border-top: 1px solid #eee;
+        &-name {
+            font-size: 15px;
+            font-weight: bold;
+            margin: 0;
+        }
+        &-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 40px;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-privacy {
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 4px 8px;
+            text-align: center;
+            margin-top: 4px;
+            border-radius: 5px;
+            font-size: 13px;
+        }
+    }
+    &-input {
+        display: flex;
+        padding: 20px;
+    }
+    &-color-emo {
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+    }
+    &-editor {
+        flex: 1;
+        height: 100px;
+        border: none;
+        font-size: 24px;
+        background: transparent;
+        &:focus {
+            outline: none;
+        }
+        &:before {
+            content: attr(placeholder);
+            color: lightgray;
+            display: block;
+            position: absolute;
+        }
+    }
+    &-editor-with-color {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        border-radius: 5px;
+    }
+    &-input-color {
+        margin-top: 15px;
+    }
+}
